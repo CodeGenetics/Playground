@@ -40,11 +40,7 @@ android {
 
 
 dependencies {
-
-    api 'androidx.core:core-ktx:1.7.0'
     api 'androidx.appcompat:appcompat:1.4.1'
-    api 'com.google.android.material:material:1.5.0'
-
     //Toast Handler (BadTokenException Handler)
     implementation "com.toastfix:toastcompatwrapper:1.2.0"
 
@@ -52,7 +48,6 @@ dependencies {
     api 'com.intuit.sdp:sdp-android:1.0.6'
     //paper db
     api 'io.paperdb:paperdb:2.7.1'
-
     //Picasso
     api 'com.github.bumptech.glide:glide:4.13.1'
 
@@ -67,9 +62,9 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.github.jdwarraich'
+                groupId = 'com.github.codegenetics'
                 artifactId = 'mylib'
-                version = '1.0.8'
+                version = '1.0.0'
             }
         }
     }
